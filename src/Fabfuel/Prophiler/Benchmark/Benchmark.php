@@ -1,7 +1,7 @@
 <?php
 /**
  * @author @fabfuel <fabian@fabfuel.de>
- * @created 13.11.14, 08:11 
+ * @created 13.11.14, 08:11
  */
 namespace Fabfuel\Prophiler\Benchmark;
 
@@ -14,37 +14,37 @@ class Benchmark implements BenchmarkInterface
     /**
      * @var string Unique identifier
      */
-    protected $name;
+    public $name;
 
     /**
      * @var double Starting time
      */
-    protected $startTime = 0.0;
+    public $startTime = 0.0;
 
     /**
      * @var double Starting memory usage
      */
-    protected $startMemory = 0.0;
+    public $startMemory = 0.0;
 
     /**
      * @var double Ending time
      */
-    protected $endTime = 0.0;
+    public $endTime = 0.0;
 
     /**
      * @var double Ending memory usage
      */
-    protected $endMemory = 0.0;
+    public $endMemory = 0.0;
 
     /**
      * @var array Custom metadata regarding this benchmark
      */
-    protected $metadata = [];
+    public $metadata = [];
 
     /**
      * @var string
      */
-    protected $component;
+    public $component;
 
     /**
      * @param string $name Unique identifier like e.g. Class::Method (\Foobar\MyClass::doSomething)

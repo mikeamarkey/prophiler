@@ -14,12 +14,12 @@ class Profiler implements ProfilerInterface, \Countable
     /**
      * @var BenchmarkInterface[]
      */
-    protected $benchmarks = [];
+    public $benchmarks = [];
 
     /**
      * @var double Starting time
      */
-    protected $start;
+    public $start;
 
     /**
      * Save start time on construction
